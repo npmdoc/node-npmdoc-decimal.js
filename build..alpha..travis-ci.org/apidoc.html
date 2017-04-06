@@ -1,0 +1,2189 @@
+<div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a
+
+        href="https://github.com/MikeMcl/decimal.js#readme"
+
+    >decimal.js (v7.1.2)</a>
+</h1>
+<h4>An arbitrary-precision Decimal type for JavaScript.</h4>
+<div class="apidocSectionDiv"><a
+    href="#apidoc.tableOfContents"
+    id="apidoc.tableOfContents"
+><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.decimal.js">module decimal.js</a><ol>
+
+        <li>
+
+            <span class="apidocSignatureSpan">boolean <span class="apidocSignatureSpan">decimal.js.</span>crypto</span>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.decimal.js.Decimal">
+            function <span class="apidocSignatureSpan">decimal.js.</span>Decimal
+            <span class="apidocSignatureSpan">(v)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.decimal.js.abs">
+            function <span class="apidocSignatureSpan">decimal.js.</span>abs
+            <span class="apidocSignatureSpan">(x)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.decimal.js.acos">
+            function <span class="apidocSignatureSpan">decimal.js.</span>acos
+            <span class="apidocSignatureSpan">(x)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.decimal.js.acosh">
+            function <span class="apidocSignatureSpan">decimal.js.</span>acosh
+            <span class="apidocSignatureSpan">(x)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.decimal.js.add">
+            function <span class="apidocSignatureSpan">decimal.js.</span>add
+            <span class="apidocSignatureSpan">(x, y)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.decimal.js.asin">
+            function <span class="apidocSignatureSpan">decimal.js.</span>asin
+            <span class="apidocSignatureSpan">(x)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.decimal.js.asinh">
+            function <span class="apidocSignatureSpan">decimal.js.</span>asinh
+            <span class="apidocSignatureSpan">(x)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.decimal.js.atan">
+            function <span class="apidocSignatureSpan">decimal.js.</span>atan
+            <span class="apidocSignatureSpan">(x)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.decimal.js.atan2">
+            function <span class="apidocSignatureSpan">decimal.js.</span>atan2
+            <span class="apidocSignatureSpan">(y, x)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.decimal.js.atanh">
+            function <span class="apidocSignatureSpan">decimal.js.</span>atanh
+            <span class="apidocSignatureSpan">(x)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.decimal.js.cbrt">
+            function <span class="apidocSignatureSpan">decimal.js.</span>cbrt
+            <span class="apidocSignatureSpan">(x)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.decimal.js.ceil">
+            function <span class="apidocSignatureSpan">decimal.js.</span>ceil
+            <span class="apidocSignatureSpan">(x)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.decimal.js.clone">
+            function <span class="apidocSignatureSpan">decimal.js.</span>clone
+            <span class="apidocSignatureSpan">(obj)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.decimal.js.config">
+            function <span class="apidocSignatureSpan">decimal.js.</span>config
+            <span class="apidocSignatureSpan">(obj)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.decimal.js.cos">
+            function <span class="apidocSignatureSpan">decimal.js.</span>cos
+            <span class="apidocSignatureSpan">(x)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.decimal.js.cosh">
+            function <span class="apidocSignatureSpan">decimal.js.</span>cosh
+            <span class="apidocSignatureSpan">(x)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.decimal.js.default">
+            function <span class="apidocSignatureSpan">decimal.js.</span>default
+            <span class="apidocSignatureSpan">(v)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.decimal.js.div">
+            function <span class="apidocSignatureSpan">decimal.js.</span>div
+            <span class="apidocSignatureSpan">(x, y)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.decimal.js.exp">
+            function <span class="apidocSignatureSpan">decimal.js.</span>exp
+            <span class="apidocSignatureSpan">(x)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.decimal.js.floor">
+            function <span class="apidocSignatureSpan">decimal.js.</span>floor
+            <span class="apidocSignatureSpan">(x)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.decimal.js.hypot">
+            function <span class="apidocSignatureSpan">decimal.js.</span>hypot
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.decimal.js.ln">
+            function <span class="apidocSignatureSpan">decimal.js.</span>ln
+            <span class="apidocSignatureSpan">(x)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.decimal.js.log">
+            function <span class="apidocSignatureSpan">decimal.js.</span>log
+            <span class="apidocSignatureSpan">(x, y)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.decimal.js.log10">
+            function <span class="apidocSignatureSpan">decimal.js.</span>log10
+            <span class="apidocSignatureSpan">(x)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.decimal.js.log2">
+            function <span class="apidocSignatureSpan">decimal.js.</span>log2
+            <span class="apidocSignatureSpan">(x)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.decimal.js.max">
+            function <span class="apidocSignatureSpan">decimal.js.</span>max
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.decimal.js.min">
+            function <span class="apidocSignatureSpan">decimal.js.</span>min
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.decimal.js.mod">
+            function <span class="apidocSignatureSpan">decimal.js.</span>mod
+            <span class="apidocSignatureSpan">(x, y)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.decimal.js.mul">
+            function <span class="apidocSignatureSpan">decimal.js.</span>mul
+            <span class="apidocSignatureSpan">(x, y)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.decimal.js.pow">
+            function <span class="apidocSignatureSpan">decimal.js.</span>pow
+            <span class="apidocSignatureSpan">(x, y)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.decimal.js.random">
+            function <span class="apidocSignatureSpan">decimal.js.</span>random
+            <span class="apidocSignatureSpan">(sd)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.decimal.js.round">
+            function <span class="apidocSignatureSpan">decimal.js.</span>round
+            <span class="apidocSignatureSpan">(x)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.decimal.js.set">
+            function <span class="apidocSignatureSpan">decimal.js.</span>set
+            <span class="apidocSignatureSpan">(obj)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.decimal.js.sign">
+            function <span class="apidocSignatureSpan">decimal.js.</span>sign
+            <span class="apidocSignatureSpan">(x)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.decimal.js.sin">
+            function <span class="apidocSignatureSpan">decimal.js.</span>sin
+            <span class="apidocSignatureSpan">(x)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.decimal.js.sinh">
+            function <span class="apidocSignatureSpan">decimal.js.</span>sinh
+            <span class="apidocSignatureSpan">(x)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.decimal.js.sqrt">
+            function <span class="apidocSignatureSpan">decimal.js.</span>sqrt
+            <span class="apidocSignatureSpan">(x)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.decimal.js.sub">
+            function <span class="apidocSignatureSpan">decimal.js.</span>sub
+            <span class="apidocSignatureSpan">(x, y)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.decimal.js.tan">
+            function <span class="apidocSignatureSpan">decimal.js.</span>tan
+            <span class="apidocSignatureSpan">(x)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.decimal.js.tanh">
+            function <span class="apidocSignatureSpan">decimal.js.</span>tanh
+            <span class="apidocSignatureSpan">(x)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.decimal.js.trunc">
+            function <span class="apidocSignatureSpan">decimal.js.</span>trunc
+            <span class="apidocSignatureSpan">(x)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">decimal.js.</span>EUCLID</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">decimal.js.</span>ROUND_CEIL</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">decimal.js.</span>ROUND_DOWN</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">decimal.js.</span>ROUND_FLOOR</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">decimal.js.</span>ROUND_HALF_CEIL</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">decimal.js.</span>ROUND_HALF_DOWN</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">decimal.js.</span>ROUND_HALF_EVEN</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">decimal.js.</span>ROUND_HALF_FLOOR</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">decimal.js.</span>ROUND_HALF_UP</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">decimal.js.</span>ROUND_UP</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">decimal.js.</span>maxE</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">decimal.js.</span>minE</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">decimal.js.</span>modulo</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">decimal.js.</span>precision</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">decimal.js.</span>rounding</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">decimal.js.</span>toExpNeg</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">decimal.js.</span>toExpPos</span>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.decimal.js" id="apidoc.module.decimal.js">module decimal.js</a></h1>
+
+
+
+
+    <h2>
+        <a href="#apidoc.element.decimal.js.Decimal" id="apidoc.element.decimal.js.Decimal">
+        function <span class="apidocSignatureSpan">decimal.js.</span>Decimal
+        <span class="apidocSignatureSpan">(v)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Decimal(v) {
+  var e, i, t,
+    x = this;
+
+  // Decimal called without new.
+  if (!(x instanceof Decimal)) return new Decimal(v);
+
+  // Retain a reference to this Decimal constructor, and shadow Decimal.prototype.constructor
+  // which points to Object.
+  x.constructor = Decimal;
+
+  // Duplicate.
+  if (v instanceof Decimal) {
+    x.s = v.s;
+    x.e = v.e;
+    x.d = (v = v.d) ? v.slice() : v;
+    return;
+  }
+
+  t = typeof v;
+
+  if (t === &#x27;number&#x27;) {
+    if (v === 0) {
+      x.s = 1 / v &#x3c; 0 ? -1 : 1;
+      x.e = 0;
+      x.d = [0];
+      return;
+    }
+
+    if (v &#x3c; 0) {
+      v = -v;
+      x.s = -1;
+    } else {
+      x.s = 1;
+    }
+
+    // Fast path for small integers.
+    if (v === ~~v &#x26;&#x26; v &#x3c; 1e7) {
+      for (e = 0, i = v; i &#x3e;= 10; i /= 10) e++;
+      x.e = e;
+      x.d = [v];
+      return;
+
+    // Infinity, NaN.
+    } else if (v * 0 !== 0) {
+      if (!v) x.s = NaN;
+      x.e = NaN;
+      x.d = null;
+      return;
+    }
+
+    return parseDecimal(x, v.toString());
+
+  } else if (t !== &#x27;string&#x27;) {
+    throw Error(invalidArgument + v);
+  }
+
+  // Minus sign?
+  if (v.charCodeAt(0) === 45) {
+    v = v.slice(1);
+    x.s = -1;
+  } else {
+    x.s = 1;
+  }
+
+  return isDecimal.test(v) ? parseDecimal(x, v) : parseOther(x, v);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.decimal.js.abs" id="apidoc.element.decimal.js.abs">
+        function <span class="apidocSignatureSpan">decimal.js.</span>abs
+        <span class="apidocSignatureSpan">(x)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function abs(x) {
+  return new this(x).abs();
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    external = false;
+
+    // Initial estimate.
+    s = x.s * Math.pow(x.s * x, 1 / 3);
+
+     // Math.cbrt underflow/overflow?
+     // Pass x to Math.pow as integer, then adjust the exponent of the result.
+    if (!s || Math.<span class="apidocCodeKeywordSpan">abs</span>(s) == 1 / 0) {
+n = digitsToString(x.d);
+e = x.e;
+
+// Adjust n exponent so it is a multiple of 3 away from x exponent.
+if (s = (e - n.length + 1) % 3) n += (s == 1 || s == -2 ? &#x27;0&#x27; : &#x27;00&#x27;);
+s = Math.pow(n, 1 / 3);
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.decimal.js.acos" id="apidoc.element.decimal.js.acos">
+        function <span class="apidocSignatureSpan">decimal.js.</span>acos
+        <span class="apidocSignatureSpan">(x)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function acos(x) {
+  return new this(x).acos();
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+/*
+ * Return a new Decimal whose value is the arccosine in radians of `x`.
+ *
+ * x {number|string|Decimal}
+ *
+ */
+function acos(x) {
+  return new this(x).<span class="apidocCodeKeywordSpan">acos</span>();
+}
+
+
+/*
+ * Return a new Decimal whose value is the inverse of the hyperbolic cosine of `x`, rounded to
+ * `precision` significant digits using rounding mode `rounding`.
+ *
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.decimal.js.acosh" id="apidoc.element.decimal.js.acosh">
+        function <span class="apidocSignatureSpan">decimal.js.</span>acosh
+        <span class="apidocSignatureSpan">(x)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function acosh(x) {
+  return new this(x).acosh();
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+ * Return a new Decimal whose value is the inverse of the hyperbolic cosine of `x`, rounded to
+ * `precision` significant digits using rounding mode `rounding`.
+ *
+ * x {number|string|Decimal} A value in radians.
+ *
+ */
+function acosh(x) {
+  return new this(x).<span class="apidocCodeKeywordSpan">acosh</span>();
+}
+
+
+/*
+ * Return a new Decimal whose value is the sum of `x` and `y`, rounded to `precision` significant
+ * digits using rounding mode `rounding`.
+ *
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.decimal.js.add" id="apidoc.element.decimal.js.add">
+        function <span class="apidocSignatureSpan">decimal.js.</span>add
+        <span class="apidocSignatureSpan">(x, y)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function add(x, y) {
+  return new this(x).plus(y);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.decimal.js.asin" id="apidoc.element.decimal.js.asin">
+        function <span class="apidocSignatureSpan">decimal.js.</span>asin
+        <span class="apidocSignatureSpan">(x)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function asin(x) {
+  return new this(x).asin();
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  if (x.isZero()) return getPi(Ctor, pr + 4, rm).times(0.5);
+
+  // TODO? Special case acos(0.5) = pi/3 and acos(-0.5) = 2*pi/3
+
+  Ctor.precision = pr + 6;
+  Ctor.rounding = 1;
+
+  x = x.<span class="apidocCodeKeywordSpan">asin</span>();
+  halfPi = getPi(Ctor, pr + 4, rm).times(0.5);
+
+  Ctor.precision = pr;
+  Ctor.rounding = rm;
+
+  return halfPi.minus(x);
+};
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.decimal.js.asinh" id="apidoc.element.decimal.js.asinh">
+        function <span class="apidocSignatureSpan">decimal.js.</span>asinh
+        <span class="apidocSignatureSpan">(x)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function asinh(x) {
+  return new this(x).asinh();
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+ * Return a new Decimal whose value is the inverse of the hyperbolic sine of `x`, rounded to
+ * `precision` significant digits using rounding mode `rounding`.
+ *
+ * x {number|string|Decimal} A value in radians.
+ *
+ */
+function asinh(x) {
+  return new this(x).<span class="apidocCodeKeywordSpan">asinh</span>();
+}
+
+
+/*
+ * Return a new Decimal whose value is the arctangent in radians of `x`, rounded to `precision`
+ * significant digits using rounding mode `rounding`.
+ *
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.decimal.js.atan" id="apidoc.element.decimal.js.atan">
+        function <span class="apidocSignatureSpan">decimal.js.</span>atan
+        <span class="apidocSignatureSpan">(x)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function atan(x) {
+  return new this(x).atan();
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  }
+
+  // TODO? Special case asin(1/2) = pi/6 and asin(-1/2) = -pi/6
+
+  Ctor.precision = pr + 6;
+  Ctor.rounding = 1;
+
+  x = x.div(new Ctor(1).minus(x.times(x)).sqrt().plus(1)).<span class="apidocCodeKeywordSpan">atan</span>();
+
+  Ctor.precision = pr;
+  Ctor.rounding = rm;
+
+  return x.times(2);
+};
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.decimal.js.atan2" id="apidoc.element.decimal.js.atan2">
+        function <span class="apidocSignatureSpan">decimal.js.</span>atan2
+        <span class="apidocSignatureSpan">(y, x)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function atan2(y, x) {
+  y = new this(y);
+  x = new this(x);
+  var r,
+    pr = this.precision,
+    rm = this.rounding,
+    wpr = pr + 4;
+
+  // Either NaN
+  if (!y.s || !x.s) {
+    r = new this(NaN);
+
+  // Both ±Infinity
+  } else if (!y.d &#x26;&#x26; !x.d) {
+    r = getPi(this, wpr, 1).times(x.s &#x3e; 0 ? 0.25 : 0.75);
+    r.s = y.s;
+
+  // x is ±Infinity or y is ±0
+  } else if (!x.d || y.isZero()) {
+    r = x.s &#x3c; 0 ? getPi(this, pr, rm) : new this(0);
+    r.s = y.s;
+
+  // y is ±Infinity or x is ±0
+  } else if (!y.d || x.isZero()) {
+    r = getPi(this, wpr, 1).times(0.5);
+    r.s = y.s;
+
+  // Both non-zero and finite
+  } else if (x.s &#x3c; 0) {
+    this.precision = wpr;
+    this.rounding = 1;
+    r = this.atan(divide(y, x, wpr, 1));
+    x = getPi(this, wpr, 1);
+    this.precision = pr;
+    this.rounding = rm;
+    r = y.s &#x3c; 0 ? r.minus(x) : r.plus(x);
+  } else {
+    r = this.atan(divide(y, x, wpr, 1));
+  }
+
+  return r;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.decimal.js.atanh" id="apidoc.element.decimal.js.atanh">
+        function <span class="apidocSignatureSpan">decimal.js.</span>atanh
+        <span class="apidocSignatureSpan">(x)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function atanh(x) {
+  return new this(x).atanh();
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+ * Return a new Decimal whose value is the inverse of the hyperbolic tangent of `x`, rounded to
+ * `precision` significant digits using rounding mode `rounding`.
+ *
+ * x {number|string|Decimal} A value in radians.
+ *
+ */
+function atanh(x) {
+  return new this(x).<span class="apidocCodeKeywordSpan">atanh</span>();
+}
+
+
+/*
+ * Return a new Decimal whose value is the arctangent in radians of `y/x` in the range -pi to pi
+ * (inclusive), rounded to `precision` significant digits using rounding mode `rounding`.
+ *
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.decimal.js.cbrt" id="apidoc.element.decimal.js.cbrt">
+        function <span class="apidocSignatureSpan">decimal.js.</span>cbrt
+        <span class="apidocSignatureSpan">(x)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function cbrt(x) {
+  return new this(x).cbrt();
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+ *  cbrt(-0) = -0
+ *  cbrt(1)  =  1
+ *  cbrt(-1) = -1
+ *  cbrt(N)  =  N
+ *  cbrt(-I) = -I
+ *  cbrt(I)  =  I
+ *
+ * Math.<span class="apidocCodeKeywordSpan">cbrt</span>(x) = (x &#x3c; 0 ? -Math.pow(-x, 1/3) : Math.pow(x, 1/3))
+ *
+ */
+P.cubeRoot = P.cbrt = function () {
+  var e, m, n, r, rep, s, sd, t, t3, t3plusx,
+    x = this,
+    Ctor = x.constructor;
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.decimal.js.ceil" id="apidoc.element.decimal.js.ceil">
+        function <span class="apidocSignatureSpan">decimal.js.</span>ceil
+        <span class="apidocSignatureSpan">(x)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function ceil(x) {
+  return finalise(x = new this(x), x.e + 1, 2);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+x                             // &#x27;0.3&#x27;
+```
+
+The methods that return a Decimal can be chained.
+
+```js
+x.dividedBy(y).plus(z).times(9).floor()
+x.times(&#x27;1.23456780123456789e+9&#x27;).plus(9876.5432321).dividedBy(&#x27;4444562598.111772&#x27;).<span class="apidocCodeKeywordSpan
+">ceil</span>()
+```
+
+Many method names have a shorter alias.
+
+```js
+x.squareRoot().dividedBy(y).toPower(3).equals(x.sqrt().div(y).pow(3))         // true
+x.cmp(y.mod(z).neg()) == 1 &#x26;&#x26; x.comparedTo(y.modulo(z).negated()) == 1        // true
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.decimal.js.clone" id="apidoc.element.decimal.js.clone">
+        function <span class="apidocSignatureSpan">decimal.js.</span>clone
+        <span class="apidocSignatureSpan">(obj)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function clone(obj) {
+  var i, p, ps;
+
+  /*
+   * The Decimal constructor and exported function.
+   * Return a new Decimal instance.
+   *
+   * v {number|string|Decimal} A numeric value.
+   *
+   */
+  function Decimal(v) {
+    var e, i, t,
+      x = this;
+
+    // Decimal called without new.
+    if (!(x instanceof Decimal)) return new Decimal(v);
+
+    // Retain a reference to this Decimal constructor, and shadow Decimal.prototype.constructor
+    // which points to Object.
+    x.constructor = Decimal;
+
+    // Duplicate.
+    if (v instanceof Decimal) {
+      x.s = v.s;
+      x.e = v.e;
+      x.d = (v = v.d) ? v.slice() : v;
+      return;
+    }
+
+    t = typeof v;
+
+    if (t === &#x27;number&#x27;) {
+      if (v === 0) {
+        x.s = 1 / v &#x3c; 0 ? -1 : 1;
+        x.e = 0;
+        x.d = [0];
+        return;
+      }
+
+      if (v &#x3c; 0) {
+        v = -v;
+        x.s = -1;
+      } else {
+        x.s = 1;
+      }
+
+      // Fast path for small integers.
+      if (v === ~~v &#x26;&#x26; v &#x3c; 1e7) {
+        for (e = 0, i = v; i &#x3e;= 10; i /= 10) e++;
+        x.e = e;
+        x.d = [v];
+        return;
+
+      // Infinity, NaN.
+      } else if (v * 0 !== 0) {
+        if (!v) x.s = NaN;
+        x.e = NaN;
+        x.d = null;
+        return;
+      }
+
+      return parseDecimal(x, v.toString());
+
+    } else if (t !== &#x27;string&#x27;) {
+      throw Error(invalidArgument + v);
+    }
+
+    // Minus sign?
+    if (v.charCodeAt(0) === 45) {
+      v = v.slice(1);
+      x.s = -1;
+    } else {
+      x.s = 1;
+    }
+
+    return isDecimal.test(v) ? parseDecimal(x, v) : parseOther(x, v);
+  }
+
+  Decimal.prototype = P;
+
+  Decimal.ROUND_UP = 0;
+  Decimal.ROUND_DOWN = 1;
+  Decimal.ROUND_CEIL = 2;
+  Decimal.ROUND_FLOOR = 3;
+  Decimal.ROUND_HALF_UP = 4;
+  Decimal.ROUND_HALF_DOWN = 5;
+  Decimal.ROUND_HALF_EVEN = 6;
+  Decimal.ROUND_HALF_CEIL = 7;
+  Decimal.ROUND_HALF_FLOOR = 8;
+  Decimal.EUCLID = 9;
+
+  Decimal.config = Decimal.set = config;
+  Decimal.clone = clone;
+
+  Decimal.abs = abs;
+  Decimal.acos = acos;
+  Decimal.acosh = acosh;        // ES6
+  Decimal.add = add;
+  Decimal.asin = asin;
+  Decimal.asinh = asinh;        // ES6
+  Decimal.atan = atan;
+  Decimal.atanh = atanh;        // ES6
+  Decimal.atan2 = atan2;
+  Decimal.cbrt = cbrt;          // ES6
+  Decimal.ceil = ceil;
+  Decimal.cos = cos;
+  Decimal.cosh = cosh;          // ES6
+  Decimal.div = div;
+  Decimal.exp = exp;
+  Decimal.floor = floor;
+  Decimal.hypot = hypot;        // ES6
+  Decimal.ln = ln;
+  Decimal.log = log;
+  Decimal.log10 = log10;        // ES6
+  Decimal.log2 = log2;          // ES6
+  Decimal.max = max;
+  Decimal.min = min;
+  Decimal.mod = mod;
+  Decimal.mul = mul;
+  Decimal.pow = pow;
+  Decimal.random = random;
+  Decimal.round = round;
+  Decimal.sign = sign;          // ES6
+  Decimal.sin = sin;
+  Decimal.sinh = sinh;          // ES6
+  Decimal.sqrt = sqrt;
+  Decimal.sub = sub;
+  Decimal.tan = tan;
+  Decimal.tanh = tanh;          // ES6
+  Decimal.trunc = trunc;        // ES6
+
+  if (obj === void 0) obj = {};
+  if (obj) {
+    ps = [&#x27;precision&#x27;, &#x27;rounding&#x27;, &#x27;toExpNeg&#x27;, &#x27;toExpPos&#x27;, &#x27;maxE&#x27;, &#x27;minE&#x27;, &#x27;modulo&#x27;, &#x27;crypto&#x27;];
+    for (i = 0; i &#x3c; ps.length;) if (!obj.hasOwnProperty(p = ps[i++])) obj[p] = this[p];
+  }
+
+  Decimal.config(obj);
+
+  return Decimal;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+applies to all Decimal numbers created from it.
+
+```js
+// Set the precision and rounding of the default Decimal constructor
+Decimal.set({ precision: 5, rounding: 4 })
+
+// Create another Decimal constructor, optionally passing in a configuration object
+Decimal10 = Decimal.<span class="apidocCodeKeywordSpan">clone</span>({ precision: 10, rounding: 1 })
+
+x = new Decimal(5)
+y = new Decimal10(5)
+
+x.div(3)                           // &#x27;1.6667&#x27;
+y.div(3)                           // &#x27;1.666666666&#x27;
+```
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.decimal.js.config" id="apidoc.element.decimal.js.config">
+        function <span class="apidocSignatureSpan">decimal.js.</span>config
+        <span class="apidocSignatureSpan">(obj)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function config(obj) {
+  if (!obj || typeof obj !== &#x27;object&#x27;) throw Error(decimalError + &#x27;Object expected&#x27;);
+  var i, p, v,
+    ps = [
+      &#x27;precision&#x27;, 1, MAX_DIGITS,
+      &#x27;rounding&#x27;, 0, 8,
+      &#x27;toExpNeg&#x27;, -EXP_LIMIT, 0,
+      &#x27;toExpPos&#x27;, 0, EXP_LIMIT,
+      &#x27;maxE&#x27;, 0, EXP_LIMIT,
+      &#x27;minE&#x27;, -EXP_LIMIT, 0,
+      &#x27;modulo&#x27;, 0, 9
+    ];
+
+  for (i = 0; i &#x3c; ps.length; i += 3) {
+    if ((v = obj[p = ps[i]]) !== void 0) {
+      if (mathfloor(v) === v &#x26;&#x26; v &#x3e;= ps[i + 1] &#x26;&#x26; v &#x3c;= ps[i + 2]) this[p] = v;
+      else throw Error(invalidArgument + p + &#x27;: &#x27; + v);
+    }
+  }
+
+  if ((v = obj[p = &#x27;crypto&#x27;]) !== void 0) {
+    if (v === true || v === false || v === 0 || v === 1) {
+      if (v) {
+        if (typeof crypto != &#x27;undefined&#x27; &#x26;&#x26; crypto &#x26;&#x26;
+          (crypto.getRandomValues || crypto.randomBytes)) {
+          this[p] = true;
+        } else {
+          throw Error(cryptoUnavailable);
+        }
+      } else {
+        this[p] = false;
+      }
+    } else {
+      throw Error(invalidArgument + p + &#x27;: &#x27; + v);
+    }
+  }
+
+  return this;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    // The initial configuration properties of the Decimal constructor.
+    Decimal = {
+
+// These values must be integers within the stated ranges (inclusive).
+// Most of these values can be changed at run-time using the `Decimal.config` method.
+
+// The maximum number of significant digits of the result of a calculation or base conversion.
+// E.g. `Decimal.<span class="apidocCodeKeywordSpan">config</span>({ precision: 20 });`
+precision: 20,                         // 1 to MAX_DIGITS
+
+// The rounding mode used when rounding to `precision`.
+//
+// ROUND_UP         0 Away from zero.
+// ROUND_DOWN       1 Towards zero.
+// ROUND_CEIL       2 Towards +Infinity.
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.decimal.js.cos" id="apidoc.element.decimal.js.cos">
+        function <span class="apidocSignatureSpan">decimal.js.</span>cos
+        <span class="apidocSignatureSpan">(x)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function cos(x) {
+  return new this(x).cos();
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+ * Return a new Decimal whose value is the cosine of `x`, rounded to `precision` significant
+ * digits using rounding mode `rounding`.
+ *
+ * x {number|string|Decimal} A value in radians.
+ *
+ */
+function cos(x) {
+  return new this(x).<span class="apidocCodeKeywordSpan">cos</span>();
+}
+
+
+/*
+ * Return a new Decimal whose value is the hyperbolic cosine of `x`, rounded to precision
+ * significant digits using rounding mode `rounding`.
+ *
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.decimal.js.cosh" id="apidoc.element.decimal.js.cosh">
+        function <span class="apidocSignatureSpan">decimal.js.</span>cosh
+        <span class="apidocSignatureSpan">(x)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function cosh(x) {
+  return new this(x).cosh();
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  if (x.isZero()) return new Ctor(x);
+
+  pr = Ctor.precision;
+  rm = Ctor.rounding;
+  Ctor.precision = pr + 7;
+  Ctor.rounding = 1;
+
+  return divide(x.sinh(), x.<span class="apidocCodeKeywordSpan">cosh</span>(), Ctor.precision = pr, Ctor.rounding = rm);
+};
+
+
+/*
+ * Return a new Decimal whose value is the arccosine (inverse cosine) in radians of the value of
+ * this Decimal.
+ *
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.decimal.js.default" id="apidoc.element.decimal.js.default">
+        function <span class="apidocSignatureSpan">decimal.js.</span>default
+        <span class="apidocSignatureSpan">(v)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Decimal(v) {
+  var e, i, t,
+    x = this;
+
+  // Decimal called without new.
+  if (!(x instanceof Decimal)) return new Decimal(v);
+
+  // Retain a reference to this Decimal constructor, and shadow Decimal.prototype.constructor
+  // which points to Object.
+  x.constructor = Decimal;
+
+  // Duplicate.
+  if (v instanceof Decimal) {
+    x.s = v.s;
+    x.e = v.e;
+    x.d = (v = v.d) ? v.slice() : v;
+    return;
+  }
+
+  t = typeof v;
+
+  if (t === &#x27;number&#x27;) {
+    if (v === 0) {
+      x.s = 1 / v &#x3c; 0 ? -1 : 1;
+      x.e = 0;
+      x.d = [0];
+      return;
+    }
+
+    if (v &#x3c; 0) {
+      v = -v;
+      x.s = -1;
+    } else {
+      x.s = 1;
+    }
+
+    // Fast path for small integers.
+    if (v === ~~v &#x26;&#x26; v &#x3c; 1e7) {
+      for (e = 0, i = v; i &#x3e;= 10; i /= 10) e++;
+      x.e = e;
+      x.d = [v];
+      return;
+
+    // Infinity, NaN.
+    } else if (v * 0 !== 0) {
+      if (!v) x.s = NaN;
+      x.e = NaN;
+      x.d = null;
+      return;
+    }
+
+    return parseDecimal(x, v.toString());
+
+  } else if (t !== &#x27;string&#x27;) {
+    throw Error(invalidArgument + v);
+  }
+
+  // Minus sign?
+  if (v.charCodeAt(0) === 45) {
+    v = v.slice(1);
+    x.s = -1;
+  } else {
+    x.s = 1;
+  }
+
+  return isDecimal.test(v) ? parseDecimal(x, v) : parseOther(x, v);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.decimal.js.div" id="apidoc.element.decimal.js.div">
+        function <span class="apidocSignatureSpan">decimal.js.</span>div
+        <span class="apidocSignatureSpan">(x, y)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function div(x, y) {
+  return new this(x).div(y);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+x.dividedBy(y).plus(z).times(9).floor()
+x.times(&#x27;1.23456780123456789e+9&#x27;).plus(9876.5432321).dividedBy(&#x27;4444562598.111772&#x27;).ceil()
+```
+
+Many method names have a shorter alias.
+
+```js
+x.squareRoot().dividedBy(y).toPower(3).equals(x.sqrt().<span class="apidocCodeKeywordSpan">div</span>(y).pow(3))         // true
+x.cmp(y.mod(z).neg()) == 1 &#x26;&#x26; x.comparedTo(y.modulo(z).negated()) == 1        // true
+```
+
+Like JavaScript&#x27;s Number type, there are `toExponential`, `toFixed` and `toPrecision` methods,
+
+```js
+x = new Decimal(255.5)
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.decimal.js.exp" id="apidoc.element.decimal.js.exp">
+        function <span class="apidocSignatureSpan">decimal.js.</span>exp
+        <span class="apidocSignatureSpan">(x)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function exp(x) {
+  return new this(x).exp();
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+* Previously, the argument was initially reduced by
+* exp(x) = exp(r) * 10^k  where r = x - k * ln10, k = floor(x / ln10)
+* to first put r in the range [0, ln10], before dividing by 32 until |x| &#x3c; 0.1, but this was
+* found to be slower than just dividing repeatedly by 32 as above.
+*
+* Max integer argument: exp(&#x27;20723265836946413&#x27;) = 6.3e+9000000000000000
+* Min integer argument: exp(&#x27;-20723265836946411&#x27;) = 1.2e-9000000000000000
+* (Math object integer min/max: Math.<span class="apidocCodeKeywordSpan">exp</span>(709) = 8.2e+307, Math.exp(-745) = 5e-324)
+*
+*  exp(Infinity)  = Infinity
+*  exp(-Infinity) = 0
+*  exp(NaN)       = NaN
+*  exp(±0)        = 1
+*
+*  exp(x) is non-terminating for any finite, non-zero x.
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.decimal.js.floor" id="apidoc.element.decimal.js.floor">
+        function <span class="apidocSignatureSpan">decimal.js.</span>floor
+        <span class="apidocSignatureSpan">(x)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function floor(x) {
+  return finalise(x = new this(x), x.e + 1, 3);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+x.minus(0.1)                  // &#x27;0.2&#x27;
+x                             // &#x27;0.3&#x27;
+```
+
+The methods that return a Decimal can be chained.
+
+```js
+x.dividedBy(y).plus(z).times(9).<span class="apidocCodeKeywordSpan">floor</span>()
+x.times(&#x27;1.23456780123456789e+9&#x27;).plus(9876.5432321).dividedBy(&#x27;4444562598.111772&#x27;).ceil()
+```
+
+Many method names have a shorter alias.
+
+```js
+x.squareRoot().dividedBy(y).toPower(3).equals(x.sqrt().div(y).pow(3))         // true
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.decimal.js.hypot" id="apidoc.element.decimal.js.hypot">
+        function <span class="apidocSignatureSpan">decimal.js.</span>hypot
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function hypot() {
+  var i, n,
+    t = new this(0);
+
+  external = false;
+
+  for (i = 0; i &#x3c; arguments.length;) {
+    n = new this(arguments[i++]);
+    if (!n.d) {
+      if (n.s) {
+        external = true;
+        return new this(1 / 0);
+      }
+      t = n;
+    } else if (t.d) {
+      t = t.plus(n.times(n));
+    }
+  }
+
+  external = true;
+
+  return t.sqrt();
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.decimal.js.ln" id="apidoc.element.decimal.js.ln">
+        function <span class="apidocSignatureSpan">decimal.js.</span>ln
+        <span class="apidocSignatureSpan">(x)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function ln(x) {
+  return new this(x).ln();
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+  x = x.times(x).minus(1).sqrt().plus(x);
+
+  external = true;
+  Ctor.precision = pr;
+  Ctor.rounding = rm;
+
+  return x.<span class="apidocCodeKeywordSpan">ln</span>();
+};
+
+
+/*
+ * Return a new Decimal whose value is the inverse of the hyperbolic sine in radians of the value
+ * of this Decimal.
+ *
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.decimal.js.log" id="apidoc.element.decimal.js.log">
+        function <span class="apidocSignatureSpan">decimal.js.</span>log
+        <span class="apidocSignatureSpan">(x, y)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function log(x, y) {
+  return new this(x).log(y);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+// Estimate result exponent.
+// x^y = 10^e,  where e = y * log10(x)
+// log10(x) = log10(x_significand) + x_exponent
+// log10(x_significand) = ln(x_significand) / ln(10)
+k = mathpow(+x, yn);
+e = k == 0 || !isFinite(k)
+  ? mathfloor(yn * (Math.<span class="apidocCodeKeywordSpan">log</span>(&#x27;0.&#x27; + digitsToString(x.d)) / Math.LN10 + x.e +
+1))
+  : new Ctor(k + &#x27;&#x27;).e;
+
+// Estimate may be incorrect e.g. x: 0.999999999999999999, y: 2.29, e: 0, r.e: -1.
+
+// Overflow/underflow?
+if (e &#x3e; Ctor.maxE + 1 || e &#x3c; Ctor.minE - 1) return new Ctor(e &#x3e; 0 ? sign / 0 : 0);
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.decimal.js.log10" id="apidoc.element.decimal.js.log10">
+        function <span class="apidocSignatureSpan">decimal.js.</span>log10
+        <span class="apidocSignatureSpan">(x)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function log10(x) {
+  return new this(x).log(10);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.decimal.js.log2" id="apidoc.element.decimal.js.log2">
+        function <span class="apidocSignatureSpan">decimal.js.</span>log2
+        <span class="apidocSignatureSpan">(x)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function log2(x) {
+  return new this(x).log(2);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.decimal.js.max" id="apidoc.element.decimal.js.max">
+        function <span class="apidocSignatureSpan">decimal.js.</span>max
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function max() {
+  return maxOrMin(this, arguments, &#x27;lt&#x27;);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+if (!x.d) return new Ctor(NaN);
+
+// cos(0) = cos(-0) = 1
+if (!x.d[0]) return new Ctor(1);
+
+pr = Ctor.precision;
+rm = Ctor.rounding;
+Ctor.precision = pr + Math.<span class="apidocCodeKeywordSpan">max</span>(x.e, x.sd()) + LOG_BASE;
+Ctor.rounding = 1;
+
+x = cosine(Ctor, toLessThanHalfPi(Ctor, x));
+
+Ctor.precision = pr;
+Ctor.rounding = rm;
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.decimal.js.min" id="apidoc.element.decimal.js.min">
+        function <span class="apidocSignatureSpan">decimal.js.</span>min
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function min() {
+  return maxOrMin(this, arguments, &#x27;gt&#x27;);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+// TODO? if (x &#x3e;= 1 &#x26;&#x26; pr &#x3c;= PI_PRECISION) atan(x) = halfPi * x.s - atan(1 / x);
+
+// Argument reduction
+// Ensure |x| &#x3c; 0.42
+// atan(x) = 2 * atan(x / (1 + sqrt(1 + x^2)))
+
+k = Math.<span class="apidocCodeKeywordSpan">min</span>(28, wpr / LOG_BASE + 2 | 0);
+
+for (i = k; i; --i) x = x.div(x.times(x).plus(1).sqrt().plus(1));
+
+external = false;
+
+j = Math.ceil(wpr / LOG_BASE);
+n = 1;
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.decimal.js.mod" id="apidoc.element.decimal.js.mod">
+        function <span class="apidocSignatureSpan">decimal.js.</span>mod
+        <span class="apidocSignatureSpan">(x, y)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function mod(x, y) {
+  return new this(x).mod(y);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+x.times(&#x27;1.23456780123456789e+9&#x27;).plus(9876.5432321).dividedBy(&#x27;4444562598.111772&#x27;).ceil()
+```
+
+Many method names have a shorter alias.
+
+```js
+x.squareRoot().dividedBy(y).toPower(3).equals(x.sqrt().div(y).pow(3))         // true
+x.cmp(y.<span class="apidocCodeKeywordSpan">mod</span>(z).neg()) == 1 &#x26;&#x26; x.comparedTo(y.modulo(z).negated()) == 1        //
+true
+```
+
+Like JavaScript&#x27;s Number type, there are `toExponential`, `toFixed` and `toPrecision` methods,
+
+```js
+x = new Decimal(255.5)
+x.toExponential(5)              // &#x27;2.55500e+2&#x27;
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.decimal.js.mul" id="apidoc.element.decimal.js.mul">
+        function <span class="apidocSignatureSpan">decimal.js.</span>mul
+        <span class="apidocSignatureSpan">(x, y)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function mul(x, y) {
+  return new this(x).mul(y);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+ * digits using rounding mode `rounding`.
+ *
+ * x {number|string|Decimal}
+ * y {number|string|Decimal}
+ *
+ */
+function mul(x, y) {
+  return new this(x).<span class="apidocCodeKeywordSpan">mul</span>(y);
+}
+
+
+/*
+ * Return a new Decimal whose value is `x` raised to the power `y`, rounded to precision
+ * significant digits using rounding mode `rounding`.
+ *
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.decimal.js.pow" id="apidoc.element.decimal.js.pow">
+        function <span class="apidocSignatureSpan">decimal.js.</span>pow
+        <span class="apidocSignatureSpan">(x, y)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function pow(x, y) {
+  return new this(x).pow(y);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+x.dividedBy(y).plus(z).times(9).floor()
+x.times(&#x27;1.23456780123456789e+9&#x27;).plus(9876.5432321).dividedBy(&#x27;4444562598.111772&#x27;).ceil()
+```
+
+Many method names have a shorter alias.
+
+```js
+x.squareRoot().dividedBy(y).toPower(3).equals(x.sqrt().div(y).<span class="apidocCodeKeywordSpan">pow</span>(3))         // true
+x.cmp(y.mod(z).neg()) == 1 &#x26;&#x26; x.comparedTo(y.modulo(z).negated()) == 1        // true
+```
+
+Like JavaScript&#x27;s Number type, there are `toExponential`, `toFixed` and `toPrecision` methods,
+
+```js
+x = new Decimal(255.5)
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.decimal.js.random" id="apidoc.element.decimal.js.random">
+        function <span class="apidocSignatureSpan">decimal.js.</span>random
+        <span class="apidocSignatureSpan">(sd)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function random(sd) {
+  var d, e, k, n,
+    i = 0,
+    r = new this(1),
+    rd = [];
+
+  if (sd === void 0) sd = this.precision;
+  else checkInt32(sd, 1, MAX_DIGITS);
+
+  k = Math.ceil(sd / LOG_BASE);
+
+  if (!this.crypto) {
+    for (; i &#x3c; k;) rd[i++] = Math.random() * 1e7 | 0;
+
+  // Browsers supporting crypto.getRandomValues.
+  } else if (crypto.getRandomValues) {
+    d = crypto.getRandomValues(new Uint32Array(k));
+
+    for (; i &#x3c; k;) {
+      n = d[i];
+
+      // 0 &#x3c;= n &#x3c; 4294967296
+      // Probability n &#x3e;= 4.29e9, is 4967296 / 4294967296 = 0.00116 (1 in 865).
+      if (n &#x3e;= 4.29e9) {
+        d[i] = crypto.getRandomValues(new Uint32Array(1))[0];
+      } else {
+
+        // 0 &#x3c;= n &#x3c;= 4289999999
+        // 0 &#x3c;= (n % 1e7) &#x3c;= 9999999
+        rd[i++] = n % 1e7;
+      }
+    }
+
+  // Node.js supporting crypto.randomBytes.
+  } else if (crypto.randomBytes) {
+
+    // buffer
+    d = crypto.randomBytes(k *= 4);
+
+    for (; i &#x3c; k;) {
+
+      // 0 &#x3c;= n &#x3c; 2147483648
+      n = d[i] + (d[i + 1] &#x3c;&#x3c; 8) + (d[i + 2] &#x3c;&#x3c; 16) + ((d[i + 3] &#x26; 0x7f) &#x3c;&#x3c; 24);
+
+      // Probability n &#x3e;= 2.14e9, is 7483648 / 2147483648 = 0.0035 (1 in 286).
+      if (n &#x3e;= 2.14e9) {
+        crypto.randomBytes(4).copy(d, i);
+      } else {
+
+        // 0 &#x3c;= n &#x3c;= 2139999999
+        // 0 &#x3c;= (n % 1e7) &#x3c;= 9999999
+        rd.push(n % 1e7);
+        i += 4;
+      }
+    }
+
+    i = k / 4;
+  } else {
+    throw Error(cryptoUnavailable);
+  }
+
+  k = rd[--i];
+  sd %= LOG_BASE;
+
+  // Convert trailing digits to zeros according to sd.
+  if (k &#x26;&#x26; sd) {
+    n = mathpow(10, LOG_BASE - sd);
+    rd[i] = (k / n | 0) * n;
+  }
+
+  // Remove trailing words which are zero.
+  for (; rd[i] === 0; i--) rd.pop();
+
+  // Zero?
+  if (i &#x3c; 0) {
+    e = 0;
+    rd = [0];
+  } else {
+    e = -1;
+
+    // Remove leading words which are zero and adjust exponent accordingly.
+    for (; rd[0] === 0; e -= LOG_BASE) rd.shift();
+
+    // Count the digits of the first word of rd to determine leading zeros.
+    for (k = 1, n = rd[0]; n &#x3e;= 10; n /= 10) k++;
+
+    // Adjust the exponent for leading zeros of the first word of rd.
+    if (k &#x3c; LOG_BASE) e -= LOG_BASE - k;
+  }
+
+  r.e = e;
+  r.d = rd;
+
+  return r;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+    if (sd === void 0) sd = this.precision;
+    else checkInt32(sd, 1, MAX_DIGITS);
+
+    k = Math.ceil(sd / LOG_BASE);
+
+    if (!this.crypto) {
+for (; i &#x3c; k;) rd[i++] = Math.<span class="apidocCodeKeywordSpan">random</span>() * 1e7 | 0;
+
+    // Browsers supporting crypto.getRandomValues.
+    } else if (crypto.getRandomValues) {
+d = crypto.getRandomValues(new Uint32Array(k));
+
+for (; i &#x3c; k;) {
+  n = d[i];
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.decimal.js.round" id="apidoc.element.decimal.js.round">
+        function <span class="apidocSignatureSpan">decimal.js.</span>round
+        <span class="apidocSignatureSpan">(x)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function round(x) {
+  return finalise(x = new this(x), x.e + 1, this.rounding);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.decimal.js.set" id="apidoc.element.decimal.js.set">
+        function <span class="apidocSignatureSpan">decimal.js.</span>set
+        <span class="apidocSignatureSpan">(obj)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function config(obj) {
+  if (!obj || typeof obj !== &#x27;object&#x27;) throw Error(decimalError + &#x27;Object expected&#x27;);
+  var i, p, v,
+    ps = [
+      &#x27;precision&#x27;, 1, MAX_DIGITS,
+      &#x27;rounding&#x27;, 0, 8,
+      &#x27;toExpNeg&#x27;, -EXP_LIMIT, 0,
+      &#x27;toExpPos&#x27;, 0, EXP_LIMIT,
+      &#x27;maxE&#x27;, 0, EXP_LIMIT,
+      &#x27;minE&#x27;, -EXP_LIMIT, 0,
+      &#x27;modulo&#x27;, 0, 9
+    ];
+
+  for (i = 0; i &#x3c; ps.length; i += 3) {
+    if ((v = obj[p = ps[i]]) !== void 0) {
+      if (mathfloor(v) === v &#x26;&#x26; v &#x3e;= ps[i + 1] &#x26;&#x26; v &#x3c;= ps[i + 2]) this[p] = v;
+      else throw Error(invalidArgument + p + &#x27;: &#x27; + v);
+    }
+  }
+
+  if ((v = obj[p = &#x27;crypto&#x27;]) !== void 0) {
+    if (v === true || v === false || v === 0 || v === 1) {
+      if (v) {
+        if (typeof crypto != &#x27;undefined&#x27; &#x26;&#x26; crypto &#x26;&#x26;
+          (crypto.getRandomValues || crypto.randomBytes)) {
+          this[p] = true;
+        } else {
+          throw Error(cryptoUnavailable);
+        }
+      } else {
+        this[p] = false;
+      }
+    } else {
+      throw Error(invalidArgument + p + &#x27;: &#x27; + v);
+    }
+  }
+
+  return this;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+specified by the `precision` and `rounding` properties of the Decimal constructor.
+
+Multiple Decimal constructors can be created, each with their own independent configuration which
+applies to all Decimal numbers created from it.
+
+```js
+// Set the precision and rounding of the default Decimal constructor
+Decimal.<span class="apidocCodeKeywordSpan">set</span>({ precision: 5, rounding: 4 })
+
+// Create another Decimal constructor, optionally passing in a configuration object
+Decimal10 = Decimal.clone({ precision: 10, rounding: 1 })
+
+x = new Decimal(5)
+y = new Decimal10(5)
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.decimal.js.sign" id="apidoc.element.decimal.js.sign">
+        function <span class="apidocSignatureSpan">decimal.js.</span>sign
+        <span class="apidocSignatureSpan">(x)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function sign(x) {
+  x = new this(x);
+  return x.d ? (x.d[0] ? x.s : 0 * x.s) : x.s || NaN;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.decimal.js.sin" id="apidoc.element.decimal.js.sin">
+        function <span class="apidocSignatureSpan">decimal.js.</span>sin
+        <span class="apidocSignatureSpan">(x)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function sin(x) {
+  return new this(x).sin();
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+if (x.isZero()) return new Ctor(x);
+
+pr = Ctor.precision;
+rm = Ctor.rounding;
+Ctor.precision = pr + 10;
+Ctor.rounding = 1;
+
+x = x.<span class="apidocCodeKeywordSpan">sin</span>();
+x.s = 1;
+x = divide(x, new Ctor(1).minus(x.times(x)).sqrt(), pr + 10, 0);
+
+Ctor.precision = pr;
+Ctor.rounding = rm;
+
+return finalise(quadrant == 2 || quadrant == 4 ? x.neg() : x, pr, rm, true);
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.decimal.js.sinh" id="apidoc.element.decimal.js.sinh">
+        function <span class="apidocSignatureSpan">decimal.js.</span>sinh
+        <span class="apidocSignatureSpan">(x)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function sinh(x) {
+  return new this(x).sinh();
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  if (x.isZero()) return new Ctor(x);
+
+  pr = Ctor.precision;
+  rm = Ctor.rounding;
+  Ctor.precision = pr + 7;
+  Ctor.rounding = 1;
+
+  return divide(x.<span class="apidocCodeKeywordSpan">sinh</span>(), x.cosh(), Ctor.precision = pr, Ctor.rounding = rm);
+};
+
+
+/*
+ * Return a new Decimal whose value is the arccosine (inverse cosine) in radians of the value of
+ * this Decimal.
+ *
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.decimal.js.sqrt" id="apidoc.element.decimal.js.sqrt">
+        function <span class="apidocSignatureSpan">decimal.js.</span>sqrt
+        <span class="apidocSignatureSpan">(x)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function sqrt(x) {
+  return new this(x).sqrt();
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+x.dividedBy(y).plus(z).times(9).floor()
+x.times(&#x27;1.23456780123456789e+9&#x27;).plus(9876.5432321).dividedBy(&#x27;4444562598.111772&#x27;).ceil()
+```
+
+Many method names have a shorter alias.
+
+```js
+x.squareRoot().dividedBy(y).toPower(3).equals(x.<span class="apidocCodeKeywordSpan">sqrt</span>().div(y).pow(3))         // true
+x.cmp(y.mod(z).neg()) == 1 &#x26;&#x26; x.comparedTo(y.modulo(z).negated()) == 1        // true
+```
+
+Like JavaScript&#x27;s Number type, there are `toExponential`, `toFixed` and `toPrecision` methods,
+
+```js
+x = new Decimal(255.5)
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.decimal.js.sub" id="apidoc.element.decimal.js.sub">
+        function <span class="apidocSignatureSpan">decimal.js.</span>sub
+        <span class="apidocSignatureSpan">(x, y)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function sub(x, y) {
+  return new this(x).sub(y);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+ * using rounding mode `rounding`.
+ *
+ * x {number|string|Decimal}
+ * y {number|string|Decimal}
+ *
+ */
+function sub(x, y) {
+  return new this(x).<span class="apidocCodeKeywordSpan">sub</span>(y);
+}
+
+
+/*
+ * Return a new Decimal whose value is the tangent of `x`, rounded to `precision` significant
+ * digits using rounding mode `rounding`.
+ *
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.decimal.js.tan" id="apidoc.element.decimal.js.tan">
+        function <span class="apidocSignatureSpan">decimal.js.</span>tan
+        <span class="apidocSignatureSpan">(x)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function tan(x) {
+  return new this(x).tan();
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+ * Return a new Decimal whose value is the tangent of `x`, rounded to `precision` significant
+ * digits using rounding mode `rounding`.
+ *
+ * x {number|string|Decimal} A value in radians.
+ *
+ */
+function tan(x) {
+  return new this(x).<span class="apidocCodeKeywordSpan">tan</span>();
+}
+
+
+/*
+ * Return a new Decimal whose value is the hyperbolic tangent of `x`, rounded to `precision`
+ * significant digits using rounding mode `rounding`.
+ *
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.decimal.js.tanh" id="apidoc.element.decimal.js.tanh">
+        function <span class="apidocSignatureSpan">decimal.js.</span>tanh
+        <span class="apidocSignatureSpan">(x)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function tanh(x) {
+  return new this(x).tanh();
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+ * Return a new Decimal whose value is the hyperbolic tangent of `x`, rounded to `precision`
+ * significant digits using rounding mode `rounding`.
+ *
+ * x {number|string|Decimal} A value in radians.
+ *
+ */
+function tanh(x) {
+  return new this(x).<span class="apidocCodeKeywordSpan">tanh</span>();
+}
+
+
+/*
+ * Return a new Decimal whose value is `x` truncated to an integer.
+ *
+ * x {number|string|Decimal}
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.decimal.js.trunc" id="apidoc.element.decimal.js.trunc">
+        function <span class="apidocSignatureSpan">decimal.js.</span>trunc
+        <span class="apidocSignatureSpan">(x)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function trunc(x) {
+  return finalise(x = new this(x), x.e + 1, 1);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
